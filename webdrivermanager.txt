@@ -1,0 +1,26 @@
+To automate web applications we need to download driver executables manually for required browsers. 
+Once driver executables are downloaded into local system then we need place them in a specific path and set path 
+for driver executables that becomes very tedious task to maintain driver executables as and
+ when browser version changes.
+
+
+Disadvantage 
+We need to download driver executables manually and set path for the same.
+
+2. As and when browser version is updated, we need to download driver executable/s 
+that can be matched with latest browser version.
+
+3. We need to set exact path for driver executable/s else we get illegalStateException. 
+[When we try to launch browser without setting correct path for driver executable/s]en browser version changes.
+
+
+To ease it, webDriverManager dependency is added to our pom
+
+Notice that simply adding WebDriverManager.chromedriver().setup(); 
+
+WebDriverManager does magic for you:
+
+It checks the version of the browser installed in your machine (e.g. Chrome, Firefox).
+It checks the version of the driver (e.g. chromedriver, geckodriver). If unknown, it uses the latest version of the driver.
+It downloads the WebDriver binary if it is not present on the WebDriverManager cache (~/.m2/repository/webdriver by default).
+It exports the proper WebDriver Java environment variables required by Selenium (not done when using WebDriverManager from the CLI or as a Server).

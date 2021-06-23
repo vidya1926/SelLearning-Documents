@@ -1,0 +1,40 @@
+What is Selenium?
+Selenium is a open source tool to automate the the web application
+Structured framework.
+save Time and Efficient
+Test application in different browser 
+can be implemented in any os
+
+*can we do 100% testing
+No its not possible, the values will be dynamic ..like banking applications, bar code
+
+Step to automate
+When an appln is provided for automation
+- do it manually to know the flow
+- know the locators
+
+DOM-Document object model
+
+consists of html and xml codes to design a webpage
+XMl-Advanced html language
+locators of DOM-are known as attributes
+
+Locators and its preferences 
+id
+name
+Classname
+xpath 
+Tagname
+linktext--a tag(anchor tag)
+partial linktext
+css selector
+ 
+Where should and shd not use locators
+values of attributes to be static-use locators
+
+if it is dynamic and also with numbers we cant use loctaors
+id having alphanumeric
+name dupliated
+class name duplicated
+link tesxt only for a tag 
+xpath with many values

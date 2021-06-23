@@ -1,0 +1,31 @@
+What is Selenium?
+Selenium is a open source tool to automate the the web application
+Structured framework.
+save Time and Efficient
+Test application in different browser 
+can be implemented in any os
+
+*can we do 100% testing
+No its not possible, the values will be dynamic ..like banking applications, bar code
+
+Step to automate
+When an appln is provided for automation
+- do it manually to know the flow
+-understand the process
+
+DOM-Document object model
+
+consists of html and xml codes to design a webpage
+XMl-Advanced html language
+
+
+Locators and its preferences 
+id
+name
+Classname
+Tagname
+linktext
+partial linktext
+xpath 
+css
+

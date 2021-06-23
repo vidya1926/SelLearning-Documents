@@ -1,0 +1,24 @@
+When we declare a variable , it will create a space in the memory
+Memory space allocated to a variable is depending on the type of variable we are declaring.
+
+
+Let us see the memory allocation for variables at the last of this session
+
+Syntax
+
+
+Scope is that area of the program where the variable is visible to a program and can be used (accessible).
+ i.e. the scope of variable determines its accessibility for other parts of program.
+
+Java allows declaring variables within any block. 
+A block defines a scope that starts with an opening curly brace and ends with a closing curly brace.
+
+
+It means that a variable defined within the block loses its value when scope is ended.
+the lifetime of any variable is confined to its scope.
+
+
+ThusReference variables are the variables which points the reference object/ value –like class object,
+Classes, interfaces, arrays, enumerations, and, annotations are reference types in Java., 
+
+Means a letter carrries address of the receiver.
