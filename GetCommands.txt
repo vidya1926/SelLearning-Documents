@@ -1,0 +1,82 @@
+Get Commands in Selenium
+
+
+get(url)	
+• The command launches a new browser and opens
+the specified URL in the browser instance
+• The command takes a single string type parameter that is usually a URL of application under test
+• To the Selenium IDE users, the command may look very much like open command
+driver.get("https://google.com");
+
+getSize()
+.This command will returns the "Dimension" object.
+.The Command is used to retreive  the width and Height of the specific element on the webpage
+  
+      Dimension size = driver.findElement(By.id("size")).getSize();
+
+getLocation()
+This command return the "Point" object.
+The Command is used to  get the exact "x" and "y" coordinates of the element 
+      
+  Point location = driver.findElement(By.xpath("//button[text()='Get Position']")).getLocation();
+     
+
+getCssValue()
+
+This command is used to get the css property of the Element.
+Cssproperties-style, font, background color,text color.
+          String color = driver.findElement(By.id("color")).getCssValue("background-color");
+
+getClass()	
+The command is used to retrieve the Class object
+that represents the runtime class of this object
+                 driver.getClass();
+
+getCurrentUrl()
+• The command is used to retrieve the URL of the webpage the user is currently accessing
+• The command doesn’t require any parameter and returns a string value
+               driver.getCurrentUrl();
+
+getPageSource()
+• The command is used to retrieve the page source
+of the webpage the user is currently accessing
+• The command doesn’t require any parameter and returns a string value
+• The command can be used with various string operations like contains() to ascertain the
+presence of the specified string value
+
+                  boolean result = driver.getPageSource().contains("String to find");
+
+getTitle()	
+• The command is used to retrieve the title of the webpage the user is currently working on.
+A null string is returned if the webpage has no title
+• The command doesn’t require any parameter and returns a trimmed string value
+             String title = driver.getTitle();
+
+
+getText()	
+• The command is used to retrieve the inner text
+of the specified web element
+• The command doesn’t require any parameter and returns a string value
+• It is also one of the extensively used commands for verification of messages, labels, errors etc displayed
+on the web pages.
+
+           String Text = driver.findElement(By.id("Text")).getText();
+
+getAttribute()
+• The command is used to retrieve the value of the specified attribute
+• The command requires a single string parameter that refers to an attribute whose value we aspire to know and returns a string value as a result.
+
+                driver.findElement(By.id("findID")).
+                  getAttribute("value");
+
+getWindowHandle()	
+• The command is used to tackle with the situation when we have more than one window to deal with.
+• The command helps us switch to the newly opened window and performs actions on the new window.
+The user can also switch back to the previous window if he/she desires.
+
+private String winHandleBefore;
+winHandleBefore = driver.getWindowHandle();
+driver.switchTo().window(winHandleBefore);
+getWindowHandles()
+• The command is similar to that of “getWindowHandle()” with the subtle difference that
+ it helps to deal with multiple windows i.e. when we have to deal with more than 2 windows.
